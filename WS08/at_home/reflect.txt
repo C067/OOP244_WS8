@@ -1,0 +1,22 @@
+//Callum Dodge
+//100229178
+//July 25, 2018
+
+Reflection 
+
+1. An abstract base class is a class that only uses or contains pure virtual functions.
+Meaning, only signatures are implemented in this class no other implementations are allowed.
+A concrete class on the other hand, is a class that only has both signatures and implementations; 
+virtual functions are not allowed in this class.
+
+2. The functions I've shadowed in my solution was the credit and debit functions. The reason for 
+this is because both functions can be reused by shadowing all other classes and use the Account class.
+Since credit adds money while debit subtracts money from the user's account we can use this in
+other functions if we need to. For example, the function monthEnd calculates the total balance of the 
+month multiplied by any intrest. Then we can shadow credit to bill the account. 
+
+3. In this workshop I have learned how to set up an interface by using an abstract class. Then, using 
+this abstract class to create concrete classes. Another thing I have learned in this workshop is the
+use of a destructor in an abstract class. Because we are allocating data we need a destructor but 
+this destructor needs to be empty because no data needs to allocated and deallocated at the start but only
+on run time; when it is called. 
